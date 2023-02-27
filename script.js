@@ -13,6 +13,7 @@ const paperbtn = document.querySelector(`#paperbutton`);
 paperbtn.addEventListener(`click`, playerSelectionPaper)
 const result = document.querySelector('#result')
 const score = document.querySelector('#score');
+const message = document.querySelector('#message');
 
 
 function playerSelectionRock(){
@@ -57,15 +58,18 @@ function play(pcSelection, playerSelect){
     if(playerSelect === "rock"){
         if(pcSelection === "Paper"){
             lose++
-            score.textContent = `${win} ${lose}`
+            score.textContent = `Wins:${win} Loses:${lose}`
+            message.textContent = "You lose!"
             return "You lose!"
         }
         else if(pcSelection === "Scissors"){
             win++
-            score.textContent = `${win} ${lose}`
+            score.textContent = `Wins:${win} Loses:${lose}`
+            message.textContent = "You win!"
             return "You win!"
         }
         else{
+            message.textContent = "Draw!"
             return "Draw!"
         }
 
@@ -74,15 +78,18 @@ function play(pcSelection, playerSelect){
     else if(playerSelect === "paper"){
         if(pcSelection === "Rock"){
             win++
-            score.textContent = `${win} ${lose}`
+            score.textContent = `Wins:${win} Loses:${lose}`
+            message.textContent = "You win!"
             return "You win!"
         }
         else if(pcSelection === "Scissors"){
             lose++
-            score.textContent = `${win} ${lose}`
+            score.textContent = `Wins:${win} Loses:${lose}`
+            message.textContent = "You lose!"
             return "You lose!"
         }
         else{
+            message.textContent = "Draw!"
             return "Draw!"
         }
 
@@ -91,15 +98,18 @@ function play(pcSelection, playerSelect){
     else if(playerSelect === "scissors"){
         if(pcSelection === "Rock"){
             lose++
-            score.textContent = `${win} ${lose}`
+            score.textContent = `Wins:${win} Loses:${lose}`
+            message.textContent = "You lose!"
             return "You lose!"
         }
         else if(pcSelection === "Paper"){
             win++
-            score.textContent = `${win} ${lose}`
+            score.textContent = `Wins:${win} Loses:${lose}`
+            message.textContent = "You win!"
             return "You win!"
         }
         else{
+            message.textContent = "Draw!"
             return "Draw!"
         }
 

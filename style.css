@@ -1,0 +1,54 @@
+.body{
+    background-color: black;
+    color: white;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 70px;
+    
+    
+}
+button{
+    font-size: 100px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 8px;
+    border: 5px solid purple;
+}
+button:hover{
+    background-color: grey;
+}
+button:active {
+    /* set time duration to your needs */
+    animation: gradient 100ms;
+    background: purple;
+    color: #fff;
+    box-shadow: none;
+}
+.winnerloser{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 70px;
+    font-size: 50px;
+}
+#message, #score{
+    padding: 10px;
+    border: 5px solid purple;
+}
+#result{
+    font-size: 50px;
+    padding: 10px;
+    border: 5px solid purple;
+    width: fit-content;
+    
+}
+.resultclass{
+    display: flex;
+    justify-content: center;
+    margin: 70px;
+    
+    
+}
